@@ -43,6 +43,7 @@ const Login = () => {
         signInWithPopup(auth, provider)
         .then((result) => {
             const user = result.user;
+            console.log(user);
             toast.success("Login successfull..")
             navigate("/")
         }).catch((error) => {
